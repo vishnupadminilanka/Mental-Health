@@ -1,4 +1,8 @@
-Does going to university in a different country affect your mental health? A Japanese international university surveyed its students in 2018 and published a study the following year that was approved by several ethical and regulatory boards. 
-The study found that international students have a higher risk of mental health difficulties than the general population, and that social connectedness (belonging to a social group) and acculturative stress (stress associated with joining a new culture) are predictive of depression.
-Explore the students data using PostgreSQL to find out if you would come to a similar conclusion for international students and see if the length of stay is a contributing factor.
-Here is a data description of the columns you may find helpful.
+1. Performing the Calculations
+Count the international students and find the summary statistics for each diagnostic test using aggregate functions. Round the averages to two decimal places and use the aliases min_phq, max_phq, and avg_phq.
+
+2. Filter and group the data
+You previously performed counts and average calculations on the data; now you need to apply the appropriate filter and group so that the calculations are done on the international student group only.
+
+3. Ordering records
+Order the resulting table in descending order of stay.
