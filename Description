@@ -6,3 +6,13 @@ You previously performed counts and average calculations on the data; now you ne
 
 3. Ordering records
 Order the resulting table in descending order of stay.
+
+SELECT stay, 
+       COUNT(*) AS count_int,
+       ROUND(AVG(todep), 2) AS average_phq, 
+       ROUND(AVG(tosc), 2) AS average_scs, 
+       ROUND(AVG(toas), 2) AS average_as
+FROM students
+WHERE inter_dom = 'Inter'
+GROUP BY stay
+ORDER BY stay DESC;
